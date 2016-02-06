@@ -1,3 +1,21 @@
+ADB converter firmware for Teensy
+================================
+
+Personal fork of the [tmk_keyboard](https://github.com/tmk/tmk_keyboard) project. Stripped back to only contain the required code for building the firmware for an ADB converter running on a Teensy 2.0.
+
+This repo disables the "magic" key, and uses the power key as a function key instead. When holding down the function key, keys F1--F4 act as media keys:
+
+F1 = Previous
+F2 = Play/Pause
+F3 = Stop
+F4 = Next
+
+The "magic" key was disabled in the [MAKEFILE](converter/adb_usb/Makefile.teensy) and the media layer was defined in custom keymap file ([keymap_hndmrsh](converter/adb_usb/keymap_hndmrsh.c)).
+
+
+---
+
+
 TMK Keyboard Firmware Collection
 ================================
 This is a keyboard firmware with some useful features for Atmel AVR controller.
