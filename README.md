@@ -3,15 +3,16 @@ ADB converter firmware for Teensy
 
 Personal fork of the [tmk_keyboard](https://github.com/tmk/tmk_keyboard) project. Stripped back to only contain the required code for building the firmware for an ADB converter running on a Teensy 2.0.
 
-This repo disables the "magic" key, and uses the power key as a function key instead. When holding down the function key, keys F1--F4 act as media keys:
+This repo switches the Alt and Win keys to match the standard Windows keymap - this means that Option becomes the Windows key, and Command becomes Alt. This firmware also disables the "magic" key, and uses the power key as a function key instead. When holding down the function key, keys F1--F4 act as media keys:
 
 F1 = Previous
 F2 = Play/Pause
 F3 = Stop
 F4 = Next
 
-The "magic" key was disabled in the [MAKEFILE](converter/adb_usb/Makefile.teensy) and the media layer was defined in custom keymap file ([keymap_hndmrsh](converter/adb_usb/keymap_hndmrsh.c)).
+The "magic" key was disabled in the [MAKEFILE](converter/adb_usb/Makefile.teensy) and the media layer and modifier keys were defined in the custom keymap file ([keymap_hndmrsh](converter/adb_usb/keymap_hndmrsh.c)).
 
+Original README continues below.
 
 ---
 
